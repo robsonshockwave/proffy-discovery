@@ -48,7 +48,7 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/guilhermecapitao/proffy-discovery
+git clone https://github.com/robsonshockwave/proffy-discovery.git
 
 # Entrar no diretório
 cd proffy-discovery
