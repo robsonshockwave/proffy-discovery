@@ -62,8 +62,10 @@
             </div>
         </header>
         <main> <!-- conteudo principal de página -->
-
-            {%for proffy in proffys%}
+        {% if proffys == "" %}
+            <p class="no-results"> Nenhum professor encontrado com a sua pesquisa.</p>
+        {% else %}
+            {% for proffy in proffys %}
             <article class="teacher-item"> <!-- conteúdo que irá repetir várias vezes -->
                 <header><img src="{{proffy.avatar}}" 
                     alt="{{proffy.name}}">
@@ -82,7 +84,8 @@
                     </a>
                 </footer>
             </article>
-            {%endfor%}
+            {% endfor %}
+        {% endif %}
 
         </main>
     </div>
